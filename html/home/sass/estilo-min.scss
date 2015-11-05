@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src:url(../font/Raleway-SemiBold.ttf);
+
+  font-family: 'Raleway-Bold';
+  src:url(../font/Raleway-Bold.ttf);
+
+  font-family: 'Raleway-regular';
+  src:url(../font/Raleway-Light.ttf);
+
+  font-family: 'Playfair Display';
+  src:url(../font/PlayfairDisplay-Bold.otf);
+
+  font-family: 'Playfair Display-italic';
+  src:url(../font/PlayfairDisplay-BoldItalic.otf);
+}
+
+$preto: #000;
+$cinza: #b3b3b3;
+$azul: #2bbafc;
+$cinza-bullet:#bcbec0;
+$branco:#fff;
+$preto-2:#010102;
+$cinza-border:#d2d2d2;
+$cinza-bg:#e7e8e8;
+$bg-btn:#bcbec0;
+$input-place:#555;
+$bg-footer:#333;
+
+.resp {
+  width: 100%;
+}
+.content-banner {
+  height: auto !important;
+}
+.resp-thumb {
+  width: 100%;
+}
+/*header*/
+header {
+  border-bottom: 5px solid $preto !important;
+  height: 200px;
+}
+.logo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*menu*/
+#menu-desktop {
+  ul {
+    list-style-type: block;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 0px 15px 10px 15px;
+        color: $preto;
+        /*font-family: 'Raleway-Bold';*/
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+
+      }
+      a:hover {
+        text-decoration: none;
+        color: $cinza;
+      }
+    }
+  }
+  /*sub-menu*/
+  .accordion{
+    display: inline-block;
+    text-align: left;
+    margin: 1%;
+    width: 30%;
+    position: absolute;
+    top:-10px;
+
+    &:hover{
+      // max-height technique
+      .accordion-content{
+        // If use the "height: auto", the effect not works. Is necessary some value for the CSS create a CSS animate, and we can use "max-height" with a great value for emulate this effect.
+        max-height: 600px;
+      }
+    }
+  }
+  .accordion-content{
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: $branco !important;
+    z-index: 9999;
+    overflow: hidden;
+    // "height: 0" not work with css transitions
+    max-height: 0;
+  }
+  .accordion-toggle{
+    -webkit-transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -ms-transition: background .1s linear;
+    -o-transition: background .1s linear;
+    transition: background .1s linear;
+  }
+  /*sub-menu*/
+  .accordion-sobre{
+    display: inline-block;
+    text-align: left;
+    margin: 1%;
+    width: 15%;
+    position: absolute;
+    top:-10px;
+
+    &:hover{
+      // max-height technique
+      .accordion-content-sobre{
+        // If use the "height: auto", the effect not works. Is necessary some value for the CSS create a CSS animate, and we can use "max-height" with a great value for emulate this effect.
+        max-height: 300px;
+      }
+    }
+  }
+  .accordion-content-sobre{
+    @extend .accordion-content;
+  }
+  .sub-menu {
+    top: 30px;
+    li {
+      display: block;
+      width: 50%;
+      float: left;
+      a {
+        display: block;
+        text-transform: uppercase;
+        color: $branco;
+        font-size: 12px;
+        padding: 10px 15px;
+        text-align: center !important;
+      }
+      a:hover {
+        text-decoration: underline;
+        color:$branco;
+      }
+    }
+  }
+  .sub-menu .title {
+    background-color: $preto;
+    text-align: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    width: 100%;
+    float: inherit;
+    overflow: hidden;
+    color:$branco;
+  }
+  .sub-menu .main {
+    width: 100%;
+    float: inherit;
+    a {
+      font-size: 15px;
+      padding: 10px 0;
+      font-weight: 700;
+      color: $branco;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: $branco;
+    }
+  }
+}
+.sub-menu-sobre {
+  @extend .sub-menu;
+  li {
+    width: 100% !important;
+  }
+}
+.bloco-menu {
+  padding-left: 100px;
+}
+/*banner*/
+.top-banner {
+  position: relative;
+  top:200px;
+}
+.carousel-inner {
+  width: 50% !important;
+}
+.content-banner {
+  width: 100%;
+  height: 430px;
+  max-height: 430px;
+  box-sizing: border-box;
+  display: block;
+}
+.box-caption {
+  background-color: $preto-2;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 20px 9px;
+  margin-top: 343px;
+}
+.content-holder {
+  display: inline-block;
+  font-size: 10px;
+  color: $azul;
+}
+.content-holder span {
+  display: inline-block;
+  font-weight: 700;
+  color: $branco;
+  font-size: 13px;
+}
+.carousel-indicators {
+  position:absolute;
+  bottom: -35px;
+}
+.carousel-indicators li {
+  border-radius: 0px !important;
+  border: 0px;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 6px;
+  height: 6px;
+  background-color: $cinza-bullet;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.carousel-indicators .active {
+  width: 6px !important;
+  height: 6px !important;
+  background-color:$azul;
+  border: 0px !important;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: 100% !important;
+}
+/*promgrame-se*/
+.program h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Playfair Display-italic", serif;
+  font-style: italic;
+}
+.linhas  {
+  border-top: 1px solid $preto;
+  border-bottom: 1px solid $preto;
+  height: 123px;
+}
+.lista-program ul {
+  text-align: center;
+  padding: 10px 0 30px;
+  height: 123px;
+}
+.program {
+  margin-top: 250px;
+  ul {
+    li {
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      margin-top: 20px;
+      text-align: center;
+      a {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 18px;
+        strong {
+          font-size: 20px;
+          display: block;
+          color: $preto;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          text-decoration-color: $preto !important;
+        }
+      }
+    }
+  }
+}
+.agora {
+  font-style: italic;
+  font-size: 11px;
+  color: $azul;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.black {
+  color: $preto;
+}
+.seeAll {
+  text-align: center;
+  padding-top: 10px;
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:$preto;
+  }
+}
+.label-4 {
+  text-align:center;
+  h2 {
+    a {
+      font-size: 40px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      line-height: 60px;
+      padding-bottom: 7px;
+      color:$preto;
+      font-weight: bold;
+    }
+  }
+  h4 {
+    a {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      line-height: 60px;
+      padding-bottom: 7px;
+      color:$preto;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+}
+/*bloco decoracao/quente*/
+.materia-content {
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  a {
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color:$preto;
+    min-height: 90px;
+  }
+}
+.desc-materia {
+  position:relative;
+  top:20px;
+  bottom: 20px;
+}
+.more {
+  bottom: 0;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  :before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5.5%;
+    display: block;
+    border: 1px solid $preto;
+    width:90%;
+    height: 10px;
+    z-index: 1;
+    border-top: none;
+
+  }
+  :after {
+    border: none;
+    border-bottom: 1px solid $branco;
+    height: 1px;
+    z-index: 2;
+    bottom: 10px;
+    left: 0px;
+  }
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    color:$preto;
+
+  }
+}
+/*bloco ultimos  videos/renault/deca*/
+.box-holder {
+  min-height: 270px;
+  border: 1px solid $cinza-border;
+  p{
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 10px 0px 10px;
+    a {
+      text-align: center;
+      font-size: 18px;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      color:$preto;
+    }
+  }
+}
+/*bloco ultimas*/
+.desc-ultimas {
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color:$preto;
+  min-height: 90px;
+  @extend .desc-materia;
+}
+.linha-2 {
+  margin-top: 50px;
+}
+.top-more {
+  padding-top: 50px;
+  position: relative;
+  :before {
+    width: 100%;
+    left:0%;
+  }
+}
+/*bloco buscas*/
+.busca {
+  h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Raleway-bold', sans-serif;
+    color:$preto;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+}
+.form-busca {
+  background-color: $cinza-bg;
+  height: 125px;
+  padding: 25px 0px 25px 0px;
+}
+.button {
+  background-color: $preto;
+  color: $branco;
+  padding: 8px 50px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.button:hover {
+  background-color:$bg-btn ;
+}
+.line-form {
+  padding-top: 10px;
+}
+imput {
+  color: $input-place !important;
+}
+::-webkit-input-placeholder {
+  color: $input-place !important;
+}
+:-moz-placeholder {
+  color: $input-place !important;color: $preto !important;
+}
+::-moz-placeholder {
+  color: $input-place !important;
+}
+:-ms-input-placeholder {
+  color: $input-place !important;
+}
+/*bloco patrocinio*/
+.box-patrocinio {
+  @extend .linhas;
+  height: 180px;
+  margin-top: 50px;
+}
+.title-patrocinio {
+  text-align: center;
+  h4 {
+    text-align: center !important;
+    font-family: 'Raleway-regular';
+    font-size: 20px;
+    padding-top: 30px;
+  }
+}
+/*bloco social*/
+.social-home {
+  margin-top: 40px;
+}
+/*Footer*/
+footer {
+  background-color:$bg-footer;
+  height: auto;
+  margin-top: 40px;
+  h5 {
+    color: #FFF;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    padding: 30px 0 37px;
+  }
+  h5:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border: 1px solid $branco;
+    border-bottom: none;
+    height: 10px;
+    width: 100%;
+    z-index: 1;
+  }
+  a:hover {
+    color: $branco;
+  }
+}
+.desc-mais {
+  @extend .desc-ultimas;
+  color: $branco;
+  font-size:18px;
+  line-height: 20px;
+  top:3;
+}
+.linhas-footer {
+  border-top: 1px solid $branco;
+  border-bottom: 1px solid $branco;
+  height: 32px;
+  margin-top: 70px;
+}
+.links-footer {
+  color:$branco;
+  text-transform: uppercase;
+  padding-top: 8px;
+  position: absolute;
+  font-size:11px;
+  a:hover {
+    text-decoration: underline;
+    color:$branco;
+  }
+}
+.border-left {
+  border-left: 1px solid $branco;
+}
+.direitos {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.header-responsivo {
+  display: none;
+}
+.espaco-logo-resp {
+  margin-top: -10px;
+}
+/*ajustes responsivo*/
+@media (max-width:1200px) {
+  .header-responsivo {
+    display: block;
+  }
+  .topo {
+    display: none;
+  }
+  .top-banner {
+    top:150px;
+  }
+  .lado-direito {
+    display:none;
+  }
+  .carousel-inner {
+    width: 100% !important;
+  }
+  .title-resp {
+    font-size: 24px !important;
+  }
+  .navbar-brand {
+    margin-left: 0px !important;
+  }
+}
+@media (max-width:991px) {
+  button.form-bsc {
+    width: 100%;
+  }
+  .ultimas-fig {
+    margin-top: 45px;
+  }
+  .label-4 {
+    min-height: 200px;
+  }
+  .linhas-footer {
+    display: none;
+  }
+  .linhas {
+    height:420px !important;
+  }
+}
+@media (max-width:767px) {
+  .top-banner {
+    top:50px;
+  }
+  .program {
+    margin-top: 50px;
+  }
+  .form-busca {
+    height:480px;
+  }
+  .social-resp {
+    margin-top: 10px;
+  }
+  .box-patrocinio {
+    height: 312px;
+  }
+  .ultimas-fig-footer {
+    margin-top: 45px;
+  }
+  .direitos {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width:991px) and (max-width:1200px) {
+  .form-busca {
+    padding: 25px 40px 25px 0px;
+  }
+  .carousel-indicators{
+    display: none !important;
+  }
+}
+@media (min-width:767px) and (max-width:991px) {
+  input, select, button {
+    margin-top: 10px !important;
+  }
+  .form-busca {
+    height:290px;
+  }
+  .tt-resp {
+    padding-left: 75px;
+  }
+  .program {
+    margin-top: 150px;
+  }
+}

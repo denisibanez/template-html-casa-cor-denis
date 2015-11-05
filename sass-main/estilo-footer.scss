@@ -1,0 +1,80 @@
+@import "main";
+@import "estilo-home-content";
+/*Footer*/
+footer {
+  background-color:$bg-footer;
+  height: auto;
+  margin-top: 40px;
+  h5 {
+    color: #FFF;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    padding: 30px 0 37px;
+  }
+  h5:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border: 1px solid $branco;
+    border-bottom: none;
+    height: 10px;
+    width: 100%;
+    z-index: 1;
+  }
+  a:hover {
+    color: $branco;
+  }
+}
+.desc-mais {
+  @extend .desc-ultimas;
+  color: $branco;
+  font-size:18px;
+  line-height: 20px;
+  top:3;
+}
+.linhas-footer {
+  border-top: 1px solid $branco;
+  border-bottom: 1px solid $branco;
+  height: 32px;
+  margin-top: 70px;
+}
+.links-footer {
+  color:$branco;
+  text-transform: uppercase;
+  padding-top: 8px;
+  position: absolute;
+  font-size:11px;
+  a:hover {
+    text-decoration: underline;
+    color:$branco;
+  }
+}
+.border-left {
+  border-left: 1px solid $branco;
+}
+.direitos {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+/*ajustes resp*/
+@media (max-width:991px) {
+  .linhas-footer {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+.direitos {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.ultimas-fig-footer {
+  margin-top: 45px;
+}
+}
