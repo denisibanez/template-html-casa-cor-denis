@@ -1,0 +1,47 @@
+@import "main";
+/*TOPO*/
+.logo {
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+
+/*carrosel*/
+.carousel-indicators {
+display: none;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+/*datas*/
+.datas {
+  margin-top: 225px;
+}
+.info-mostra {
+  text-align: center;
+}
+.full {
+  text-align: center;
+}
+.border-info {
+  border-left: 2px solid $preto;
+}
+/*ajustes responsivo*/
+@media (min-width:991px) and (max-width:1200px) {
+  .datas {
+    margin-top: 90px !important;
+  }
+}
+@media (max-width:991px) {
+  .datas {
+    margin-top: 0px !important;
+  }
+  .border-info {
+    border-left: 0px;
+  }
+  .border-info-resp {
+      border-top: 1px solid $preto;
+}
+}

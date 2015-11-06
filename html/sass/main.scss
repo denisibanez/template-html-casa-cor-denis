@@ -83,9 +83,6 @@ header {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.title-mostra {
-
-}
 /*menu*/
 #menu-desktop {
   ul {
@@ -120,12 +117,14 @@ header {
     width: 30%;
     position: absolute;
     top:-10px;
+    width: 100px;
 
     &:hover{
       // max-height technique
       .accordion-content{
         // If use the "height: auto", the effect not works. Is necessary some value for the CSS create a CSS animate, and we can use "max-height" with a great value for emulate this effect.
         max-height: 600px;
+        width: 400px;
       }
     }
   }
@@ -141,6 +140,7 @@ header {
     overflow: hidden;
     // "height: 0" not work with css transitions
     max-height: 0;
+    width: 400px;
   }
   .accordion-toggle{
     -webkit-transition: background .1s linear;

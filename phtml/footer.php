@@ -8,7 +8,7 @@
   <title>CASA COR: o maior evento de decoração da América Latina.</title>
   <!-- Bootstrap -->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/estilo-footer.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -16,7 +16,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body>
 <!--footer-->
 <footer class="container-fluid">
   <div class="container">
@@ -26,7 +25,7 @@
         <figure>
           <a href=""><img src="../img/thumb-ultimas-casa-cor-04.jpeg" alt="" class="resp-thumb"></a>
         </figure>
-        <caption>
+        <caption class="text-footer">
           <a class="desc-mais" href="#">
             Pedro Ariel assina curadoria do Westwing
           </a>

@@ -1,0 +1,83 @@
+@import "main";
+/*promgrame-se*/
+.program h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Playfair Display-italic", serif;
+  font-style: italic;
+}
+.linhas  {
+  border-top: 1px solid $preto;
+  border-bottom: 1px solid $preto;
+  height: 123px;
+}
+.lista-program ul {
+  text-align: center;
+  padding: 10px 0 30px;
+  height: 123px;
+}
+.program {
+    margin-top: 225px;
+  ul {
+    li {
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+      margin-top: 20px;
+      text-align: center;
+      a {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 18px;
+        strong {
+          font-size: 20px;
+          display: block;
+          color: $preto;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          text-decoration-color: $preto !important;
+        }
+      }
+    }
+  }
+}
+.agora {
+  font-style: italic;
+  font-size: 11px;
+  color: $azul;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.black {
+  color: $preto;
+}
+.seeAll {
+  text-align: center;
+  padding-top: 10px;
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:$preto;
+  }
+}
+/*ajustes responsivo*/
+@media (max-width:991px) {
+  .linhas {
+    height:420px !important;
+  }
+  .program {
+    margin-top: 0px !important;
+  }
+}
+@media (min-width:991px) and (max-width:1200px) {
+  .program {
+    margin-top: 100px;
+  }
+}
