@@ -1,22 +1,20 @@
-@import "main";
+@import 'main';
 h1 {
-   text-align: center;
+  text-align: center;
    font-size: 46px;
    font-family: "Playfair Display", serif;
    font-style: italic;
    font-weight: 700;
    margin-bottom: 25px;
+   color:$preto;
 }
-.content-profissionais {
+.content-canal{
   margin-top: 200px;
 }
-.form-busca {
-  height: 85px;
+.content-canal-2{
+  margin-top: -150px;
 }
-.busca {
-  margin-top: -30px;
-}
-.profi-desc {
+.canal-desc {
   display: block;
     font-size: 20px;
     text-align: center;
@@ -28,23 +26,14 @@ h1 {
         color:$preto;
     }
 }
-.profi-top {
-  margin-top: 50px;
-}
-
 /*ajustes mobile*/
 @media (max-width:1200px) {
-  .content-profissionais {
+  .content-canal {
     margin-top: 0px;
   }
 }
-@media (min-width:767px) and (max-width:991px) {
-  .form-busca {
-    height: 149px;
- }
-}
-@media (max-width:767px) {
-  .form-busca {
-    height: 233px;
- }
+@media (max-width:991px) {
+  .content-canal-2{
+    margin-top:-20px;
+  }
 }

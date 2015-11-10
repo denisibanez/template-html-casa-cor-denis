@@ -1,4 +1,4 @@
-@import "main";
+@import 'main';
 h1 {
    text-align: center;
    font-size: 46px;
@@ -7,7 +7,7 @@ h1 {
    font-weight: 700;
    margin-bottom: 25px;
 }
-.content-profissionais {
+.content-ambientes{
   margin-top: 200px;
 }
 .form-busca {
@@ -16,7 +16,10 @@ h1 {
 .busca {
   margin-top: -30px;
 }
-.profi-desc {
+.amb-top {
+  margin-top: 50px;
+}
+.amb-desc {
   display: block;
     font-size: 20px;
     text-align: center;
@@ -28,23 +31,19 @@ h1 {
         color:$preto;
     }
 }
-.profi-top {
-  margin-top: 50px;
-}
-
 /*ajustes mobile*/
 @media (max-width:1200px) {
-  .content-profissionais {
+  .content-ambientes {
     margin-top: 0px;
   }
 }
 @media (min-width:767px) and (max-width:991px) {
   .form-busca {
-    height: 149px;
+    height: 190px;
  }
 }
 @media (max-width:767px) {
   .form-busca {
-    height: 233px;
+    height: 280px;
  }
 }

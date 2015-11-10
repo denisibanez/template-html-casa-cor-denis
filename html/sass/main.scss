@@ -31,6 +31,24 @@ $bg-btn:#bcbec0;
 $input-place:#555;
 $bg-footer:#333;
 
+body {
+  color:$preto;
+}
+.center {
+  text-align: center;
+}
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: $preto;
+    border: 1px solid $preto;
+    border-radius: 0px;
+    color:$branco;
+    margin-top: 15px;
+}
+.pager li>a:hover {
+  color:$preto;
+}
 .resp {
   width: 100%;
 }
@@ -45,6 +63,9 @@ $bg-footer:#333;
 }
 .espaco-logo-resp {
   margin-top: -10px;
+}
+iframe{
+    overflow:hidden;
 }
 .label-4 {
   text-align:center;
@@ -94,10 +115,10 @@ header {
       a {
         display: block;
         text-decoration: none;
-        padding: 0px 15px 10px 15px;
+        padding: 0px 10px 10px 10px;
         color: $preto;
         /*font-family: 'Raleway-Bold';*/
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
@@ -116,7 +137,7 @@ header {
     margin: 1%;
     width: 30%;
     position: absolute;
-    top:-10px;
+    top:-11px;
     width: 100px;
 
     &:hover{
@@ -156,7 +177,7 @@ header {
     margin: 1%;
     width: 15%;
     position: absolute;
-    top:-10px;
+    top:-11px;
 
     &:hover{
       // max-height technique
@@ -168,6 +189,7 @@ header {
   }
   .accordion-content-sobre{
     @extend .accordion-content;
+    width: 160px;
   }
   .sub-menu {
     top: 30px;
@@ -477,8 +499,11 @@ imput {
 /*Footer*/
 footer {
   background-color:$bg-footer;
-  height: auto;
+  height: 450px;
   margin-top: 40px;
+  position: relative;
+    bottom: 0;
+    width: 100%;
   h5 {
     color: #FFF;
     font-size: 26px;
@@ -522,7 +547,9 @@ footer {
   border-top: 1px solid $branco;
   border-bottom: 1px solid $branco;
   height: 32px;
-  margin-top: 70px;
+  width: 100%;
+  position:relative;
+  margin-top: -110px;
 }
 .links-footer {
   color:$branco;
@@ -540,8 +567,18 @@ footer {
 }
 .direitos {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 35px;
+}
+.hg-foo {
+  background-color:$bg-footer;
+}
+.mg-foo {
+  margin-top: -1px;
+  background-color:$bg-footer;
+}
+#footer-resp-frame {
+  display: none;
 }
 /*ajustes responsivo*/
 @media (max-width:1200px) {
@@ -602,6 +639,12 @@ footer {
   .box-patrocinio {
     height: 312px;
   }
+  .none-resp {
+    display: none;
+  }
+  #footer-resp-frame {
+    display:block;
+  }
 }
 @media (min-width:991px) and (max-width:1200px) {
   .carousel-indicators{
@@ -609,6 +652,12 @@ footer {
   }
   .form-busca {
     padding: 25px 40px 25px 0px;
+  }
+  .navbar-header {
+    left: 38% !important;
+    position: relative;
+    top:25px;
+    margin-bottom:30px;
   }
 }
 @media (min-width:767px) and (max-width:991px) {
@@ -621,4 +670,13 @@ footer {
   .tt-resp {
     padding-left: 75px;
   }
+  .footer {
+    height: 560px;
   }
+  .navbar-header {
+    left: 36% !important;
+    position: relative;
+    top:25px;
+    margin-bottom:30px;
+  }
+}

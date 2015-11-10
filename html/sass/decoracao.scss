@@ -1,4 +1,4 @@
-@import "main";
+@import 'main';
 h1 {
    text-align: center;
    font-size: 46px;
@@ -7,16 +7,10 @@ h1 {
    font-weight: 700;
    margin-bottom: 25px;
 }
-.content-profissionais {
+.content-dec{
   margin-top: 200px;
 }
-.form-busca {
-  height: 85px;
-}
-.busca {
-  margin-top: -30px;
-}
-.profi-desc {
+.dec-desc {
   display: block;
     font-size: 20px;
     text-align: center;
@@ -28,23 +22,28 @@ h1 {
         color:$preto;
     }
 }
-.profi-top {
-  margin-top: 50px;
-}
-
-/*ajustes mobile*/
-@media (max-width:1200px) {
-  .content-profissionais {
-    margin-top: 0px;
+.breadcrumb {
+    text-align: center;
+    background-color: $branco;
+    margin-top:25px;
+  li {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: italic;
+    color:$preto;
+      a{
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+        font-style: italic;
+        color:$preto
+    }
   }
 }
-@media (min-width:767px) and (max-width:991px) {
-  .form-busca {
-    height: 149px;
- }
-}
-@media (max-width:767px) {
-  .form-busca {
-    height: 233px;
- }
+/*ajustes mobile*/
+@media (max-width:1200px) {
+  .content-dec {
+    margin-top: 0px;
+  }
 }

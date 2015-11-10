@@ -1,0 +1,60 @@
+@import 'main';
+h1 {
+  text-align: center;
+   font-size: 46px;
+   font-family: "Playfair Display", serif;
+   font-style: italic;
+   font-weight: 700;
+   margin-bottom: 25px;
+   color:$preto;
+}
+.content-canal{
+  margin-top: 200px;
+}
+.content-canal-2{
+  margin-top: -150px;
+}
+.canal-desc {
+  display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    margin: 15px 0px 15px 0px;
+    color:$preto;
+    a:hover{
+        color:$preto;
+    }
+}
+h2 {
+  text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h3 {
+  font-size: 12px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-left: -15px !important;
+}
+.social-share-buttons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  height: 75%;
+}
+
+/*ajustes mobile*/
+@media (max-width:1200px) {
+  .content-canal {
+    margin-top: 0px;
+  }
+}
+@media (max-width:991px) {
+  .content-canal-2{
+    margin-top:-20px;
+  }
+}

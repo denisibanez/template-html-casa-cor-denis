@@ -719,59 +719,99 @@ footer a:hover {
     margin-bottom: 30px;
   }
 }
-/*TOPO*/
-.logo {
+h1 {
   text-align: center;
-  margin-top: 34px;
-  margin-bottom: 50px;
+  font-size: 46px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
 }
 
-/*carrosel*/
-.carousel-indicators {
-  display: none;
+.content-canal {
+  margin-top: 200px;
 }
 
-.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+.content-canal-2 {
+  margin-top: -150px;
+}
+
+.canal-desc {
   display: block;
-  max-width: 100%;
-  height: auto !important;
-}
-
-/*datas*/
-.datas {
-  margin-top: 225px;
-}
-
-.info-mostra {
+  font-size: 20px;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin: 15px 0px 15px 0px;
+  color: #000;
+}
+.canal-desc a:hover {
+  color: #000;
 }
 
-.full {
+h2 {
   text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.border-info {
-  border-left: 2px solid #000;
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  height: 75%;
 }
 
-/*ajustes responsivo*/
-@media (min-width: 991px) and (max-width: 1200px) {
-  .datas {
-    margin-top: 90px !important;
+.info-desc {
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.box-patrocinio {
+  margin-top: -100px !important;
+}
+
+/*ajustes mobile*/
+@media (max-width: 1200px) {
+  .content-canal {
+    margin-top: 0px;
+  }
+
+  .info-desc {
+    font-size: 14px;
+  }
+
+  .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    height: 78%;
+  }
+
+  .box-patrocinio {
+    margin-top: -50px !important;
   }
 }
 @media (max-width: 991px) {
-  .datas {
+  .content-canal-2 {
+    margin-top: -20px;
+  }
+
+  .info-desc {
+    margin-top: -80px;
+    border-bottom: 0px;
+  }
+
+  .box-patrocinio {
     margin-top: 0px !important;
   }
-
-  .border-info {
-    border-left: 0px;
+}
+@media (max-width: 767px) {
+  .info-desc {
+    margin-top: -50px;
   }
-
-  .border-info-resp {
-    border-top: 1px solid #000;
+}
+@media (max-width: 480px) {
+  .info-desc {
+    margin-top: 0px;
   }
 }
 
-/*# sourceMappingURL=mostra.css.map */
+/*# sourceMappingURL=info.css.map */
