@@ -1,11 +1,11 @@
 @import 'main';
 h1 {
-   text-align: center;
-   font-size: 46px;
-   font-family: "Playfair Display", serif;
-   font-style: italic;
-   font-weight: 700;
-   margin-bottom: 25px;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 .content-ambientes{
   margin-top: 200px;
@@ -21,15 +21,15 @@ h1 {
 }
 .amb-desc {
   display: block;
-    font-size: 20px;
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    margin: 15px 0px 15px 0px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin: 15px 0px 15px 0px;
+  color:$preto;
+  a:hover{
     color:$preto;
-    a:hover{
-        color:$preto;
-    }
+  }
 }
 /*ajustes mobile*/
 @media (max-width:1200px) {
@@ -40,10 +40,10 @@ h1 {
 @media (min-width:767px) and (max-width:991px) {
   .form-busca {
     height: 190px;
- }
+  }
 }
 @media (max-width:767px) {
   .form-busca {
     height: 280px;
- }
+  }
 }

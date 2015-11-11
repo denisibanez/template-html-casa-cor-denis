@@ -438,8 +438,9 @@ header {
 
 .form-busca {
   background-color: #e7e8e8;
-  height: 125px;
+  height: 130px;
   padding: 25px 0px 25px 0px;
+  border: 1px solid #ccc;
 }
 
 .button {
@@ -457,7 +458,7 @@ header {
 }
 
 .line-form {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 imput {
@@ -483,8 +484,8 @@ imput {
 
 /*bloco patrocinio*/
 .box-patrocinio {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   height: 180px;
   margin-top: 50px;
 }
@@ -729,25 +730,43 @@ h1 {
   color: #000;
 }
 
-.content-canal {
-  margin-top: 200px;
+.content-contato {
+  margin-top: 230px;
 }
 
-.content-canal-2 {
-  margin-top: -150px;
-}
-
-.canal-desc {
-  display: block;
-  font-size: 20px;
+.contact-box {
   text-align: center;
+}
+.contact-box p {
+  font-size: 17px;
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  margin: 15px 0px 15px 0px;
+}
+.contact-box a, .contact-box a:hover {
   color: #000;
 }
-.canal-desc a:hover {
+
+.data-contato {
+  margin-top: 15px;
+  background-color: #fff;
+  text-align: center;
+  margin-left: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.data-contato a, .data-contato a:hover {
   color: #000;
+}
+
+.form-busca {
+  height: 341px;
+}
+
+.top-cont {
+  margin-top: 33px !important;
+}
+
+.top-data {
+  margin-top: 50px !important;
 }
 
 /*ajustes mobile*/
@@ -755,10 +774,32 @@ h1 {
   .content-canal {
     margin-top: 0px;
   }
+
+  .form-busca {
+    height: 340px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 991px) {
+  .form-busca {
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .top-resp-cont {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 991px) {
-  .content-canal-2 {
-    margin-top: -20px;
+  .form-busca {
+    height: 365px;
+  }
+}
+@media (max-width: 767px) {
+  .data-contato {
+    margin-top: 0px;
   }
 }
 
