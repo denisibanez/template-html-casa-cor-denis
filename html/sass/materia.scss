@@ -1,0 +1,205 @@
+@import 'main';
+a:hover {
+  color:$preto !important;
+  text-decoration: underline !important;
+}
+/*titulos*/
+h1 {
+  text-align: center;
+  font-size: 46px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color:$preto !important;
+}
+h2.subtitle {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 80px 25px;
+  color:$preto !important;
+}
+h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  position: relative;
+  margin-top: -58px !important;
+  color:$preto !important;
+}
+.social-media h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-top: 20px !important;
+  color:$preto !important;
+}
+/*divulgue*/
+.divulgue {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.social-share-buttons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/*topo*/
+.content-materia{
+  margin-top: 200px;
+}
+.grupo-headers {
+  text-align: center;
+}
+.breadcrumb {
+  text-align: center;
+  background-color: $branco;
+  margin-top:25px;
+  li {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: italic;
+    color:$preto;
+    a{
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      font-style: italic;
+      color:$preto
+    }
+  }
+}
+.author {
+  text-align: center;
+  font-size: 12px;
+  color: $branco !important;
+  margin-bottom: 25px !important;
+  margin-top: 25px !important;
+  text-transform: uppercase;
+  background-color: $preto;
+  padding: 10px 10px;
+}
+.breadcrumb {
+  background-color: $branco !important;
+}
+/*sidebar*/
+.insta-box {
+  overflow: hidden;
+  border: 1px solid #AAA;
+  padding: 10px 9px;
+  margin-top: 30px;
+}
+.face-box {
+  margin-top: 10px;
+}
+.insta-box-span {
+  display: block;
+  color: $cinza-2;
+  font-size: 10px;
+  text-align: center;
+}
+.insta-box-title {
+  display: block;
+  color: $preto;
+  font-size: 10px;
+  text-align: center;
+}
+.btn-follow {
+  text-align: center;
+}
+figure {
+  text-align: center;
+}
+strong{
+  text-align: center;
+}
+#fb-root {
+  display: none;
+}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+/*content*/
+.materia-cont {
+  margin: 10px 0px 20px 0px;
+  font-size: 15px;
+  a {
+    color: $azul;
+    font-weight: bold;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+}
+.destaque-tags {
+  a {
+    background-color: $amarelo;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 7px 10px 7px 10px;
+    color:$preto;
+  }
+}
+.content-ult {
+  position:relative;
+  top: -370px;
+}
+.top-more-2 {
+  margin-top:-315px !important;
+}
+.destaque-tags-bd {
+  padding-bottom: 27px;
+  border-bottom: 3px solid;
+}
+/*bloco 2 */
+.bloc-2 {
+  margin-top: -255px;
+}
+/*ajustes mobile*/
+@media (max-width:1200px) {
+  .content-materia {
+    margin-top: 0px;
+  }
+}
+@media (min-width:991px) and (max-width:1200px) {
+  .content-ult {
+    position: relative;
+    top: -350px;
+  }
+.azm-btn {
+  font-size:12px !important;
+  }
+}
+@media (max-width:991px) {
+  .side-bar {
+    margin-top: 80px;
+  }
+  iframe  {
+    width: 100% !important;
+  }
+  .content-ult {
+    top:0px;
+  }
+  .bloc-2 {
+    top:275px;
+  }
+  .top-more-2 {
+    margin-top: 35px !important;
+  }
+  .top-more {
+    padding-top: 300px !important;
+  }
+  .top-more-4 {
+    padding-top: 15px !important;
+  }
+}

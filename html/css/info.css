@@ -807,6 +807,7 @@ h2 {
 @media (max-width: 767px) {
   .info-desc {
     margin-top: -50px;
+    text-align: justify;
   }
 }
 @media (max-width: 480px) {
