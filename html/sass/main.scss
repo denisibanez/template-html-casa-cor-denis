@@ -553,6 +553,10 @@ header {
     width: 100%;
     position:relative;
     margin-top: -110px;
+    a:hover {
+      text-decoration: underline;
+      color:$branco;
+    }
   }
   .links-footer {
     color:$branco;
@@ -560,10 +564,6 @@ header {
     padding-top: 8px;
     position: absolute;
     font-size:11px;
-    a:hover {
-      text-decoration: underline;
-      color:$branco;
-    }
   }
   .border-left {
     border-left: 1px solid $branco;
