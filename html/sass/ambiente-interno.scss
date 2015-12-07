@@ -118,9 +118,6 @@ h3 {
 .btn-follow {
   text-align: center;
 }
-figure {
-  text-align: center;
-}
 strong{
   text-align: center;
 }
@@ -134,9 +131,8 @@ strong{
 .materia-cont {
   margin: 10px 0px 20px 0px;
   font-size: 15px;
-  min-height:400px;
+  min-height:300px;
   max-height: 5000px;
-
   a {
     color: $azul;
     font-weight: bold;
@@ -144,21 +140,27 @@ strong{
     transition: all 300ms ease-in-out;
   }
 }
-.destaque-tags {
-  a {
-    background-color: $amarelo;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 7px 10px 7px 10px;
-    color:$preto;
+.box-profissionais {
+  background-color: $cinza-bg;
+  height: 320px;
+  figure {
+    padding-top:20px;
+    margin-left:-20px;
+}
+}
+.gall {
+  margin-top: 30px;
+}
+.desc-profissional-int {
+  margin-left: 300px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 16px;
+  margin-top: -170px;
+    a {
+  color: $preto;
   }
-}
-.top-more-2 {
-  margin-top:40px;
-}
-.destaque-tags-bd {
-  padding-bottom: 27px;
-  border-bottom: 3px solid;
 }
 /*ajustes mobile*/
 @media (max-width:1200px) {
@@ -167,8 +169,11 @@ strong{
   }
 }
 @media (min-width:991px) and (max-width:1200px) {
-.azm-btn {
+  .azm-btn {
   font-size:12px !important;
+  }
+  .materia-cont{
+    margin-top: -65px;
   }
 }
 @media (max-width:991px) {
@@ -177,5 +182,47 @@ strong{
   }
   iframe  {
     width: 100% !important;
+  }
+  .content-ult {
+    top:0px;
+  }
+}
+
+@media (max-width:660px) {
+  .materia-cont {
+    margin-top: -80px;
+  }
+}
+@media (max-width:560px) {
+  .materia-cont {
+    margin-top: -140px;
+  }
+}
+@media (max-width:580px) {
+  .box-profissionais {
+    background-color: #e7e8e8;
+    height: 376px !important;
+  }
+  .box-profissionais figure {
+    padding-top: 0px;
+    margin-left: 0px;
+      img {
+        width: 100%;
+        height: 100%
+      }
+  }
+  .desc-profissional-int {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .gall {
+    margin-top: 430px;
+  }
+
+}
+
+@media (max-width:460px) {
+  .materia-cont {
+    margin-top: -200px;
   }
 }

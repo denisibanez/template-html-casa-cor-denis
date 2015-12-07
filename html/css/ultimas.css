@@ -720,12 +720,6 @@ footer a:hover {
     margin-bottom: 30px;
   }
 }
-a:hover {
-  color: #000 !important;
-  text-decoration: underline !important;
-}
-
-/*titulos*/
 h1 {
   text-align: center;
   font-size: 46px;
@@ -733,62 +727,23 @@ h1 {
   font-style: italic;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #000 !important;
 }
 
-h2.subtitle {
-  text-align: center;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  margin: 0 80px 25px;
-  color: #000 !important;
-}
-
-h3 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 5px;
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  position: relative;
-  margin-top: -58px !important;
-  color: #000 !important;
-}
-
-.social-media h3 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 5px;
-  text-align: center;
-  margin-top: 20px !important;
-  color: #000 !important;
-}
-
-/*divulgue*/
-.divulgue {
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  margin-top: 25px;
-  margin-left: 15px;
-}
-
-.social-share-buttons {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-/*topo*/
-.content-materia {
+.content-quente {
   margin-top: 200px;
 }
 
-.grupo-headers {
+.quente-desc {
+  display: block;
+  font-size: 20px;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin: 15px 0px 15px 0px;
+  color: #000;
+}
+.quente-desc a:hover {
+  color: #000;
 }
 
 .breadcrumb {
@@ -811,117 +766,11 @@ h3 {
   color: #000;
 }
 
-.author {
-  text-align: center;
-  font-size: 12px;
-  color: #fff !important;
-  margin-bottom: 25px !important;
-  margin-top: 25px !important;
-  text-transform: uppercase;
-  background-color: #000;
-  padding: 10px 10px;
-}
-
-.breadcrumb {
-  background-color: #fff !important;
-}
-
-/*sidebar*/
-.insta-box {
-  overflow: hidden;
-  border: 1px solid #AAA;
-  padding: 10px 9px;
-  margin-top: 30px;
-}
-
-.face-box {
-  margin-top: 10px;
-}
-
-.insta-box-span {
-  display: block;
-  color: #ccc;
-  font-size: 10px;
-  text-align: center;
-}
-
-.insta-box-title {
-  display: block;
-  color: #000;
-  font-size: 10px;
-  text-align: center;
-}
-
-.btn-follow {
-  text-align: center;
-}
-
-figure {
-  text-align: center;
-}
-
-strong {
-  text-align: center;
-}
-
-#fb-root {
-  display: none;
-}
-
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-  width: 100% !important;
-}
-
-/*content*/
-.materia-cont {
-  margin: 10px 0px 20px 0px;
-  font-size: 15px;
-  min-height: 400px;
-  max-height: 5000px;
-}
-.materia-cont a {
-  color: #2bbafc;
-  font-weight: bold;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.destaque-tags a {
-  background-color: #f9f442;
-  font-size: 11px;
-  text-transform: uppercase;
-  padding: 7px 10px 7px 10px;
-  color: #000;
-}
-
-.top-more-2 {
-  margin-top: 40px;
-}
-
-.destaque-tags-bd {
-  padding-bottom: 27px;
-  border-bottom: 3px solid;
-}
-
 /*ajustes mobile*/
 @media (max-width: 1200px) {
-  .content-materia {
+  .content-quente {
     margin-top: 0px;
   }
 }
-@media (min-width: 991px) and (max-width: 1200px) {
-  .azm-btn {
-    font-size: 12px !important;
-  }
-}
-@media (max-width: 991px) {
-  .side-bar {
-    margin-top: 80px;
-  }
 
-  iframe {
-    width: 100% !important;
-  }
-}
-
-/*# sourceMappingURL=materia.css.map */
+/*# sourceMappingURL=ultimas.css.map */
